@@ -1,4 +1,5 @@
 import { movies } from "../../constants/movies";
+import "./movie-list.css";
 import { MovieCard } from "../index";
 
 const MovieList = () => {
