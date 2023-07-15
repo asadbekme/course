@@ -2,7 +2,7 @@ import { Header, MovieList } from "./components";
 
 const App = () => {
   return (
-    <div>
+    <div className="container">
       <Header />
       <MovieList />
     </div>

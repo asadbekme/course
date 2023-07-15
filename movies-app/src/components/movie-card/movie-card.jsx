@@ -1,12 +1,11 @@
 const MovieCard = (props) => {
-  console.log(props);
   return (
     <div className="movie">
-      {/* <h4 className="movie__name">{name}</h4>
-      <img src={imgUrl} alt="Movie image" />
-      <p className="movie__liked">{liked}</p>
-      <p className="movie__date">{date}</p> */}
-      test
+      <h4 className="movie__name">{props.name}</h4>
+      <img src={props.imgUrl} alt="Movie image" />
+      <p className="movie__liked">{props.liked}</p>
+      <p className="movie__date">{props.date}</p>
+      Test
     </div>
   );
 };
