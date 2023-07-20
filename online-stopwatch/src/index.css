@@ -1,0 +1,83 @@
+/* Main styles */
+body {
+  background: #43c6ac; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #191654,
+    #43c6ac
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #191654,
+    #43c6ac
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Montserrat", "sans-serif";
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-container {
+  margin: 30px 0;
+  background: #485563; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #29323c,
+    #485563
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #29323c,
+    #485563
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 5px;
+  padding: 60px 30px;
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.15),
+    0 15px 90px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+}
+
+.timer-col {
+  text-align: center;
+  margin: 0 40px;
+  min-width: 90px;
+  position: relative;
+}
+
+.timer-label {
+  color: rgba(255, 255, 255, 0.35);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-top: 10px;
+}
+
+.timer-count {
+  color: gray;
+}
+
+.timer-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  margin: 10px;
+  width: 78%;
+}
+
+span {
+  color: #7474bf;
+}
+
+@media (max-width: 825px) {
+  .timer-container {
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .timer-col + .timer-col {
+    margin-top: 20px;
+  }
+}
